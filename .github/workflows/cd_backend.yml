@@ -23,7 +23,7 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           context: .
-          file: ./docker/Dockerfile.be
+          file: ./Dockerfile.be
           push: true
           tags: Saikat/todo-app-backend:${{ github.sha }}
           ##.sha is the hash of the current commit 
