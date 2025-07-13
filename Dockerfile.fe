@@ -19,8 +19,9 @@ COPY . .
 
 RUN bun install
 RUN bun run db:generate
-RUN bun run build
+RUN DATABASE_URL=${DATABASE_URL} bun run build
 
 EXPOSE 3000
 
 CMD ["bun","run","start:web"]
+

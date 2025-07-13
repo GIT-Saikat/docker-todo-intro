@@ -10,4 +10,11 @@ export default async function Home() {
   
 }
 
+//for incremental site genertion
 export const revalidate = 60;
+//or 
+// export const dynamic = 'force-dynamic' 
+
+
+
+//next js dockerfile is tricky because nextjs need to have  connection and talk to DB during the  build phase
