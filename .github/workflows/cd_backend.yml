@@ -26,5 +26,6 @@ on:
             file: ./docker/Dockerfile.backend
             push: true
             tags: Saikat/todo-app-backend:${{github.sha}}
+            ##.sha is the hash of the current commit 
 
             ##Steps to deploy to a VM
