@@ -21,7 +21,7 @@ COPY . .
 
 RUN bun install
 RUN bun run db:generate
-RUN DATABASE_URL=$DATABASE_URL bun run build
+RUN bun run build
 RUN echo "Database URL is: $DATABASE_URL" 
 
 EXPOSE 3000
