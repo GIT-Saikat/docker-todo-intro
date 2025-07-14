@@ -25,7 +25,7 @@ jobs:
           context: .
           file: ./Dockerfile.fe
           build-args: | 
-            - DATABASE_URL=${{ secrets.DATABASE_URL }}
+            DATABASE_URL=${{ secrets.DATABASE_URL }}
           push: true
           tags: saikat2105/todo-app-frontend:${{ github.sha }}
           ##.sha is the hash of the current commit 
