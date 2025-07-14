@@ -11,9 +11,9 @@ export default async function Home() {
 }
 
 //for incremental site genertion
-export const revalidate = 60;
+// export const revalidate = 60;
 //or 
-// export const dynamic = 'force-dynamic' 
+export const dynamic = 'force-dynamic' 
 
 
 
